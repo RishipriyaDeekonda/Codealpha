@@ -1,0 +1,18 @@
+import random
+name=input("what is your name") 
+print("good luck! ", name) 
+words=['student', 'foreign', 'graduate', 'excellent', 'talented', 'Smart', 'good', postgraduate']
+word=random.choice(words) 
+print("guess the character") 
+guesses=' '
+turns=12
+while turns>0:
+failed=0
+for char in words:
+if char in guesses:
+print(char, end=" ") 
+else:
+print("____") 
+failed+=1
+if failed==0:
+print(" you win") 
